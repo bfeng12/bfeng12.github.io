@@ -44,8 +44,6 @@ a {
 }
 /*Stuff below here is specific headers and portrait and stuff*/
 .header {
-    position: fixed;
-    top: 0;
     width: 100%;
     margin: 0;
     background-color: brown;
