@@ -1,81 +1,124 @@
-﻿body {
+﻿
+.topnav {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100%;
+    background-color: maroon;
+}
+
+.topnav a {
+    border-radius: 15px 15px 0px 0px;
+    float: left;
+    background-color: maroon;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a.active {
+    background-color: #550000;
+}
+
+.topnav a:hover {
+    background-color: hsl(0, 20%, 15%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
     background-color: aliceblue;
     font-family: Verdana;
     margin: 0;
 }
-body>* {
-    margin: 7px;
-}
-h1 {
-    color:maroon;
-    font-family: 'Palatino Linotype';
-    font-size: 60px;
-    font-weight: bolder;
-    text-transform: capitalize;
-    text-align: center;
-}
-h2 {
-    color:maroon;
-    font-size: 100%;
-}
-table {
-    border-collapse: collapse;
-    margin: auto;
-}
-table,th,td{
-    border: 1px solid black;
-}
-th {
-    height: 50px;
-    background-color: brown;
+
+/* Style the header */
+.header {
+    background-color: maroon;
+    color: #111;
+    font-family: Consolas;
+    font-size: 50px;
+    font-weight: bold;
     color: white;
-}
-td {
     text-align: center;
-    height: 40px;
+    margin:0;
+    padding:10px;
 }
 
-img {
-    image-orientation:from-image;
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
 }
-a {
-    text-decoration: none;
+
+    /* Left and right column */
+    .column.side {
+        width: 25%;
+    }
+
+    /* Middle column */
+    .column.middle {
+        width: 50%;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-/*Stuff below here is specific headers and portrait and stuff*/
-.header {
-    width: 100%;
-    margin: 0;
-    background-color: brown;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
-}
-   
-.header a {
-    float:left;
+
+/* Style the footer */
+.footer {
+    background: #ddd;
+    padding: 10px;
     text-align: center;
-    padding: 15px 20px;
-    width: 100px;
-    color: white;
+}
+blockquote {
+    font-style: italic;
+    width: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px, 0px, 10px, 10px;
+    padding: 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.icons{
     text-decoration: none;
-    font-weight: 500;
-    font-size: 17px;
 }
-    .header a.active {
-        background-color: #800000;
+    .icons img {
+        height: 50px;
     }
-    .header a:hover {
-        background-color: hsl(0, 20%, 15%);
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
     }
-.tdname {
-    font-weight: bold;
 }
-.maintext {
-    margin-top: 50px; 
-    height: 2000px;
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    float:left;
+    margin: 15px;
+    padding: 15px;
+    max-width:30.5%;
 }
-#portrait {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
 }
 

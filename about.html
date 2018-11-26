@@ -1,26 +1,70 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="author" content="Benny Feng" />
     <title>About</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <link rel="icon" href="icons/icon1.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div class="header">
-        <a href="index.html">Home</a>
-        <a class="active" href="about.html">About</a>
+        print("Benny Feng's Portfolio")
+        <img src="icons/header_icon.png" style="width:70px; vertical-align:middle;" />
+    </div>
+    <div class="topnav">
+        <a href="index.html">Home Page</a>
+        <a class="active" href="about.html">About Me</a>
         <a href="assignments.html">Assignments</a>
         <a href="contact.html">Contact</a>
         <a href="resume.pdf" target="_blank">Resume</a>
     </div>
-    <div class="maintext">
-        <h1>About</h1>
+    <h1 style="text-align:center;">About Me</h1>
+    <div class="row">
+        <div class="column side">
+            <h2>Inspiration</h2>
+            <blockquote>
+                "Nothing in life is easy. You must work hard to get to where you want to be.
+                Be true to your goals, and most importantly never give up!"<br />
+                -My Father, Yong Quan Feng
+            </blockquote>
+            <blockquote>
+                “Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains.”
+                —Bill Gates, Co-Chairman, Bill & Melinda Gates Foundation, Co-Founder, Microsoft
+            </blockquote>
+        </div>
+        <div class="column middle">
+            <h2 style="text-align:center;">Biography</h2>
+            <img style ="display: block;margin: 0 auto;"src="images/portrait.jpg" alt="portrait" height="400" id="portrait" />
+            <p>
+                Benny Feng is a Computer Science undergraduate at
+                <strong><font color="red">Stony Brook University</font></strong>
+                expected to graduate in May of 2020.
+                He has achieved a cumulative GPA of <strong>3.98</strong> so far in his undergraduate career. He has experience
+                using Java, Python, and C Programming languages, as well as HTML and CSS.
+                When he isn't glued to the computer screen, he spends his time
+                exercising at the recreational center, and cooking delicious meals in his dorm. He currently resides in
+                New York City where he is looking for an opportunity to showcase his abilities as a Software Developer Intern   .
+            </p>
+        </div>
+        <div class="column side">
+            <h2>Side 2</h2>
+            <p>Lorem ipsum dolor </p>
+        </div>
     </div>
-
-
+    <div class="footer">
+        <p>Follow me on social media.</p>
+        <a class="icons" href="https://www.facebook.com/benny.azn" target="_blank">
+            <img src="icons/facebook.png" />
+        </a>
+        <a class="icons" href="https://www.linkedin.com/in/benny-feng-744748141" target="_blank">
+            <img src="icons/linkedin.png" />
+        </a>
+        <a class="icons" href="https://github.com/bfeng12" target="_blank">
+            <img src="icons/github.png" />
+        </a>
+    </div>
 </body>
 </html>
