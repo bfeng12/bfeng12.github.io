@@ -10,10 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="header">
-        print("Benny Feng's Portfolio")
-        <img src="icons/header_icon.png" style="width:70px; vertical-align:middle;" />
-    </div>
+    <a href="index.html" style="text-decoration:none;">
+        <div class="header">
+            print("Benny Feng's Portfolio")
+            <img src="icons/header_icon.png" style="width:70px; vertical-align:middle;" />
+        </div>
+    </a>
     <div class="topnav">
         <a class="active" href="index.html">Home Page</a>
         <a href="about.html">About Me</a>
@@ -21,17 +23,21 @@
         <a href="contact.html">Contact</a>
         <a href="resume.pdf" target="_blank">Resume</a>
     </div>
-    <div class="maintext">
-        <h1>Benny Feng</h1>
-
-        <img src="images/portrait.jpg" alt="portrait" height="400" id="portrait" />
-        <p>
-            Hello, my name is Benny Feng. I am a currently a Junior
-            and a Computer Science student at <strong>Stony Brook University.</strong><br />
-            Some things that I enjoy to do is code and develop software, specifically backend.
+    <div class="maintext" style="margin:10px;font-size: 18px; padding:20px;">
+        <img style ="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 55%;"src="images/Welcome.jpg"/>
+        <h4 style="color:maroon;">Greetings and Welcome to my page!</h4>
+        <p>I am Benny Feng and I am the creator of this website.</p>
+        <p>I wrote this page to display my accomplishments and to put my work out on the web. Feel free 
+            to look around. You find more about me in the 'About Me' section, or you can find some of my assignments
+            under the 'Assignment' tab.
         </p>
-
-        <h2>Relevant Classes</h2>
+        <p>If you have any questions or inqueries please feel free to <a href="contact.html">
+    contact me.</a>
+        </p>
+        <h2 style="color: maroon;">Relevant Classes</h2>
         <ul>
             <li>CSE-214 Data Structures and Algorithms</li>
             <li>CSE-219 Object-Oriented Design and Design Patterns</li>

@@ -10,10 +10,12 @@
     <link rel="icon" href="icons/icon1.png" />
 </head>
 <body>
-    <div class="header">
-        print("Benny Feng's Portfolio")
-        <img src="icons/header_icon.png" style="width:70px; vertical-align:middle;" />
-    </div>
+    <a href="index.html" style="text-decoration:none;">
+        <div class="header">
+            print("Benny Feng's Portfolio")
+            <img src="icons/header_icon.png" style="width:70px; vertical-align:middle;" />
+        </div>
+    </a>
     <div class="topnav">
         <a href="index.html">Home Page</a>
         <a class="active" href="about.html">About Me</a>
@@ -21,23 +23,22 @@
         <a href="contact.html">Contact</a>
         <a href="resume.pdf" target="_blank">Resume</a>
     </div>
-    <h1 style="text-align:center;">About Me</h1>
+    <h1 style="text-align:center; margin-bottom:0px;">About Me</h1>
     <div class="row">
         <div class="column side">
-            <h2>Inspiration</h2>
-            <blockquote>
+            <h2 style="text-align:center;">Inspiration</h2>
+            <blockquote style="width:auto;">
                 "Nothing in life is easy. You must work hard to get to where you want to be.
-                Be true to your goals, and most importantly never give up!"<br />
-                -My Father, Yong Quan Feng
+                Follow your goals, and most importantly never give up on them!"
+                <p>-My Father, Yong Quan Feng</p>
             </blockquote>
-            <blockquote>
+            <blockquote style="width: auto;">
                 “Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains.”
-                —Bill Gates, Co-Chairman, Bill & Melinda Gates Foundation, Co-Founder, Microsoft
+                <p>—Bill Gates, Co-Chairman, Bill & Melinda Gates Foundation, Co-Founder, Microsoft</p>
             </blockquote>
         </div>
         <div class="column middle">
-            <h2 style="text-align:center;">Biography</h2>
-            <img style ="display: block;margin: 0 auto;"src="images/portrait.jpg" alt="portrait" height="400" id="portrait" />
+            <img style ="display: block;margin: 0 auto;border-radius:10%;"src="images/portrait.jpg" alt="portrait" height="350" id="portrait" />
             <p>
                 Benny Feng is a Computer Science undergraduate at
                 <strong><font color="red">Stony Brook University</font></strong>
@@ -46,12 +47,31 @@
                 using Java, Python, and C Programming languages, as well as HTML and CSS.
                 When he isn't glued to the computer screen, he spends his time
                 exercising at the recreational center, and cooking delicious meals in his dorm. He currently resides in
-                New York City where he is looking for an opportunity to showcase his abilities as a Software Developer Intern   .
+                New York City where he is looking for an opportunity to showcase his abilities as a <strong>Software Developer Intern</strong>.
             </p>
         </div>
         <div class="column side">
-            <h2>Side 2</h2>
-            <p>Lorem ipsum dolor </p>
+            <h2 style="text-align:center;">Skills</h2>
+            <h4 style="margin-bottom:0;">Coding</h4>
+            <dl>
+                <dt style="color: red; font-weight: bold;">Java</dt>
+                <dd>Experience Level: <em>Advanced</em></dd>
+                <dd>Has programmed using Java for about 3 years.</dd>
+                <dt style="color:goldenrod;font-weight:bold;">Python</dt>
+                <dd>Experience Level: <em>Novice</em></dd>
+                <dd>Has started programming using Python for a couple of months.</dd>
+                <dt style="color:cornflowerblue;font-weight:bold;">C</dt>
+                <dd>Experience Level: <em>Beginner</em></dd>
+                <dd>Has only begun using C programming language.</dd>
+            </dl>
+            <h4 style="margin-bottom:0;">Other Skills</h4>
+            <ul>
+                <li>Microsoft Excel</li>
+                <li>Microsoft Word</li>
+                <li>Written Communication</li>
+                <li>Fluent in Spoken Cantonese</li>
+                <li>Fluent in Spanish</li>
+            </ul>
         </div>
     </div>
     <div class="footer">
